@@ -1,0 +1,374 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.titulo {
+    background: linear-gradient(to right, #ff2600, #06bd4c);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+    font-family: JetBrain, monospace;
+    font-size: 4rem;
+    display: block;
+    /* em vez de inline-block */
+    text-align: center;
+    /* centraliza o texto */
+    margin: 20px auto;
+    /* centraliza o bloco */
+}
+
+.destaque {
+    font-family: JetBrain, monospace;
+    font-size: 2rem;
+    text-align: center;
+    color: #b20000;
+    margin-bottom: 30px;
+}
+
+hr {
+  margin-bottom: 15px; /* afasta a linha do título abaixo */
+}
+
+.texto {
+    font-family: JetBrain, monospace;
+    font-size: 20px;
+    text-align: center;
+      padding: 0 30px; /* afasta 20px da esquerda e da direita */
+    color: #000000;
+    margin-top: 20px;
+}
+
+.image {
+    height: 30rem;
+    width: auto;
+    text-align: center;
+}
+
+#s8 img {
+  margin-top: 20px; /* afasta a imagem do texto */
+}
+
+
+/* ===== NOMES RIDERS ===== */
+.zeroone, .saber, .revice, .geats, .gotchard, .gavv, .zeztz {
+    font-family: JetBrain, monospace;
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.zeroone { color: #098241; }
+.saber   { color: #820909; }
+.revice  { color: #ff009d; }
+.geats   { color: #c12401; }
+.gotchard{ color: #00a6ff; }
+.gavv    { color: #dd00ff; }
+.zeztz   { color: #008c67; }
+
+/* ===== TABELA DE FORMAS ===== */
+.tabela-formas {
+    width: 100%;
+    margin: 15px auto;
+    border-collapse: collapse;
+    table-layout: fixed;
+    /* colunas com largura igual */
+}
+
+.tabela-formas td {
+    text-align: center;
+    padding: 12px;
+}
+
+.tabela-formas a {
+    display: block;
+    text-decoration: none;
+    font-family: JetBrain, monospace;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #000000;
+    background: linear-gradient(90deg, #0097e3, #00e5ff);
+    padding: 10px;
+    border-radius: 6px;
+    transition: background 0.3s, transform 0.2s;
+}
+
+/* Hover */
+.tabela-formas a:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: scale(1.05);
+}
+
+/* Ativo (quando clicado) */
+.tabela-formas a.active {
+    background: #fff;
+    color: #e52e71;
+}
+
+
+/* ====== MENU HORIZONTAL ====== */
+#menu-horizontal {
+    background: linear-gradient(90deg, #710505, #a20000);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    padding: 10px 20px;
+    display: flex;
+    justify-content: center;
+}
+
+#menu-horizontal ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+#menu-horizontal li {
+    position: relative;
+}
+
+#menu-horizontal a {
+    display: block;
+    padding: 10px 16px;
+    text-decoration: none;
+    font-family: JetBrain, monospace;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #f8f8f8;
+    border-radius: 8px;
+    transition: background 0.3s, transform 0.2s;
+}
+
+#menu-horizontal a:hover {
+    background: rgba(255, 255, 255, 0.15);
+    transform: translateY(-2px);
+}
+
+#menu-horizontal a.active {
+    background: #fff;
+    color: #b20000;
+}
+
+/* ====== BOTÃO VOLTAR AO TOPO ====== */
+#topo-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 12px 16px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 8px;
+    background: linear-gradient(90deg, #4e4e4e, #333333);
+    color: #fff;
+    cursor: pointer;
+    opacity: 0;
+    /* invisível inicialmente */
+    transition: opacity 0.5s ease-in-out;
+    z-index: 1000;
+}
+
+#topo-btn.show {
+    opacity: 1;
+    /* aparece suavemente */
+}
+
+#topo-btn:hover {
+    background: linear-gradient(90deg, #00831a, #00a431);
+}
+
+/* Estilo do modal */
+.modal {
+    display: none;
+    /* começa invisível */
+    position: fixed;
+    z-index: 2000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal video {
+    max-width: 80%;
+    max-height: 80%;
+    border-radius: 8px;
+}
+
+.modal .close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    color: #fff;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+
+/* ====== RESPONSIVIDADE ====== */
+@media (max-width: 768px) {
+    body { background: #23272a; }
+    .titulo { font-size: 2.5rem; }
+    .destaque { font-size: 1.2rem; }
+    .texto { font-size: 1rem; padding: 0 10px; }
+
+    .image {
+        height: 16rem;
+        max-width: 95%;
+    }
+
+    .tabela-formas td { padding: 6px; }
+    .tabela-formas a { font-size: 0.9rem; padding: 8px; }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    body { background: #23272a; }
+    .titulo { font-size: 3rem; }
+    .destaque { font-size: 1.5rem; }
+    .texto { font-size: 1.1rem; padding: 0 15px; }
+
+    .image {
+        height: 22rem;
+        max-width: 95%;
+    }
+
+    .tabela-formas a { font-size: 1rem; padding: 9px; }
+}
+
+/* ====== CELULARES PEQUENOS ====== */
+@media (max-width: 480px) {
+    .tabela-formas a {
+        font-size: 0.8rem;
+        padding: 6px;
+    }
+    #menu-horizontal a {
+        font-size: 0.9rem;
+        padding: 6px 10px;
+    }
+}
+
+/* ====== CELULARES MÉDIOS ====== */
+@media (min-width: 481px) and (max-width: 768px) {
+    .tabela-formas a {
+        font-size: 0.9rem;
+        padding: 7px;
+    }
+    #menu-horizontal a {
+        font-size: 1rem;
+        padding: 8px 12px;
+    }
+}
+
+/* Quando a tela for pequena */
+@media (max-width: 768px) {
+  .tabela-formas {
+    display: flex;
+    flex-direction: column;  /* um embaixo do outro */
+    justify-content: center; /* centraliza horizontalmente */
+    align-items: center;     /* centraliza horizontal */
+    width: 100%;
+    padding: 20px 0;         /* espaço acima e abaixo */
+    gap: 10px;               /* espaço entre os botões */
+  }
+
+  .tabela-formas tr,
+  .tabela-formas td {
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin: 5px 0;
+  }
+
+  .tabela-formas a {
+    display: inline-block;
+    width: 80%;        /* largura dos botões */
+    max-width: 300px;
+    margin: 5px auto;  /* centralizado e espaçamento */
+  }
+
+  /* Ajuste da distância da imagem para os botões */
+  .image {
+    margin-bottom: 15px; /* aumenta o espaço entre imagem e botões */
+  }
+
+    /* ===== Menu horizontal em coluna ===== */
+    #menu-horizontal {
+        flex-direction: column; /* empilha itens */
+        align-items: center;
+    }
+
+    #menu-horizontal ul {
+        flex-direction: column; /* empilha links */
+        gap: 10px;
+        width: 100%;
+    }
+
+    #menu-horizontal li {
+        width: 100%;
+        text-align: center;
+    }
+
+    #menu-horizontal a {
+        display: block;
+        width: 90%;
+        margin: 0 auto;
+        font-size: 1rem;
+        padding: 10px;
+    }
+
+    /* ===== Modo escuro ===== */
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #121212; /* fundo escuro */
+    color: #f5f5f5;            /* texto claro */
+  }
+
+  .texto {
+    color: #e0e0e0;            /* parágrafo mais legível */
+  }
+
+  .titulo {
+    background: linear-gradient(to right, #ff2600, #06bd4c);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .destaque {
+    color: #ff9999;
+  }
+
+  /* Cores dos nomes dos riders (ajustadas para contraste) */
+  .zeroone { color: #51ff00; }
+  .saber   { color: #ff0000; }
+  .revice  { color: #ff0095; }
+  .geats   { color: #dd0700; }
+  .gotchard{ color: #66ccff; }
+  .gavv    { color: #c300c3; }
+  .zeztz   { color: #00e851; }
+
+  /* Botões */
+  .tabela-formas a {
+    color: #000;               /* texto dentro do botão */
+    background: linear-gradient(90deg, #0097e3, #00e5ff);
+  }
+
+  #menu-horizontal {
+    background: linear-gradient(90deg, #710505, #a20000);
+  }
+
+  #menu-horizontal a {
+    color: #f5f5f5;
+  }
+
+  #topo-btn {
+    background: linear-gradient(90deg, #555555, #333333);
+    color: #f5f5f5;
+  }
+}
+
+}
