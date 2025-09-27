@@ -113,7 +113,7 @@ const riderVideos = {
     "Master Gavv": "Imagens/Gavv/videos/base.mp4"
   },
   zeztz: {
-    base: "Imagens/Zeztz/Videos/base.mp4",
+    "Physicam Impact": "Imagens/Zeztz/Videos/base.mp4", // Corrigido 'base' para 'Physicam Impact' para corresponder ao HTML/riderVideos
     "Technolom Machinery": "Imagens/Zeztz/videos/Technolom Machinery.mp4",
     "Esprim Barrier": "Imagens/Zeztz/videos/Esprim Barrier.mp4",
     "Paradigm Gravity": "Imagens/Zeztz/videos/Paradigm Gravity.mp4"
@@ -128,22 +128,63 @@ const formasSelecionadas = {
   geats: "MagnumBoost",
   gotchard: "Steamhopper",
   gavv: "Poppin Gummy",
-  zeztz: "base"
+  zeztz: "Physicam Impact" // Corrigido para a forma base correta
 };
 
-// ===== Troca de imagem =====
+// ===== Troca de imagem e destaque do botão =====
 function trocarForma(rider, forma, event) {
   if (event) event.preventDefault();
+  
   const img = document.getElementById(`img-${rider}`);
   if (img && riders[rider] && riders[rider][forma]) {
     img.src = riders[rider][forma];
     img.alt = `${rider} - ${forma}`;
     formasSelecionadas[rider] = forma;
+
+    // Lógica para mudar o estilo do botão
+    // Encontra a section pai para evitar afetar outras tabelas
+    const section = img.closest('section');
+    const tabela = section ? section.querySelector('.tabela-formas') : null;
+    
+    if (tabela) {
+      // 1. Remove a classe 'active' de todos os botões da tabela
+      tabela.querySelectorAll('a').forEach(a => {
+        a.classList.remove('active');
+      });
+
+      // 2. Adiciona a classe 'active' ao botão clicado
+      if (event && event.currentTarget) {
+        event.currentTarget.classList.add('active');
+      }
+    }
   }
+}
+
+// ===== Ativa as formas base ao carregar a página =====
+function setInitialFormsActive() {
+  // Mapeia os riders com base no HTML (s1 a s7)
+  const riderSections = [
+    's1', 's2', 's3', 's4', 's5', 's6', 's7'
+  ];
+
+  riderSections.forEach(id => {
+    const section = document.getElementById(id);
+    if (section) {
+      // Pega o primeiro link (botão) da tabela de formas
+      const firstLink = section.querySelector('.tabela-formas a');
+      if (firstLink) {
+        // Adiciona a classe 'active' ao primeiro botão (forma base)
+        firstLink.classList.add('active');
+      }
+    }
+  });
 }
 
 // ===== DOMContentLoaded =====
 document.addEventListener("DOMContentLoaded", () => {
+    
+  // *** Ativa os botões das formas base ao carregar ***
+  setInitialFormsActive();
 
   // Botão voltar ao topo
   const topoBtn = document.getElementById("topo-btn");
