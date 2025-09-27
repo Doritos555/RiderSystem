@@ -101,7 +101,7 @@ hr {
     transform: scale(1.05);
 }
 
-/* Ativo (quando clicado) - Novo estilo mais bonito */
+/* Ativo (quando clicado) - NOVO ESTILO BONITINHO */
 .tabela-formas a.active {
     /* Gradiente vibrante e moderno */
     background: linear-gradient(135deg, #ff0054, #ff57a0);
@@ -112,7 +112,7 @@ hr {
     /* Sombra para dar profundidade (efeito "levantado") */
     box-shadow: 0 4px 15px rgba(255, 0, 84, 0.6);
     
-    /* Borda sólida para destaque (opcional, mas ajuda) */
+    /* Borda sólida para destaque */
     border: 2px solid #ffffff; 
     
     /* Garante que o efeito de escala de hover não se aplique ao ativo */
@@ -223,12 +223,22 @@ hr {
     cursor: pointer;
 }
 
+
 /* ====== RESPONSIVIDADE ====== */
+
+/* CORREÇÃO: Adicionando cor de texto clara para evitar texto preto sobre fundo escuro no mobile */
 @media (max-width: 768px) {
-    body { background: #23272a; }
+    body { 
+        background: #23272a; 
+        color: #f8f8f8; /* Garante texto claro no corpo */
+    }
     .titulo { font-size: 2.5rem; }
     .destaque { font-size: 1.2rem; }
-    .texto { font-size: 1rem; padding: 0 10px; }
+    .texto { 
+        font-size: 1rem; 
+        padding: 0 10px; 
+        color: #e0e0e0; /* Garante texto claro no parágrafo */
+    }
 
     .image {
         height: 16rem;
@@ -237,13 +247,75 @@ hr {
 
     .tabela-formas td { padding: 6px; }
     .tabela-formas a { font-size: 0.9rem; padding: 8px; }
+
+    /* Estilos de responsividade da tabela/menu (mantidos do original) */
+    .tabela-formas {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        padding: 20px 0;
+        gap: 10px;
+    }
+
+    .tabela-formas tr,
+    .tabela-formas td {
+        display: block;
+        width: 100%;
+        text-align: center;
+        margin: 5px 0;
+    }
+
+    .tabela-formas a {
+        display: inline-block;
+        width: 80%;
+        max-width: 300px;
+        margin: 5px auto;
+    }
+    
+    .image {
+        margin-bottom: 15px;
+    }
+
+    #menu-horizontal {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #menu-horizontal ul {
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+    }
+
+    #menu-horizontal li {
+        width: 100%;
+        text-align: center;
+    }
+
+    #menu-horizontal a {
+        display: block;
+        width: 90%;
+        margin: 0 auto;
+        font-size: 1rem;
+        padding: 10px;
+    }
 }
 
+/* CORREÇÃO: Adicionando cor de texto clara para evitar texto preto sobre fundo escuro no tablet */
 @media (min-width: 769px) and (max-width: 1024px) {
-    body { background: #23272a; }
+    body { 
+        background: #23272a; 
+        color: #f8f8f8; /* Garante texto claro no corpo */
+    }
     .titulo { font-size: 3rem; }
     .destaque { font-size: 1.5rem; }
-    .texto { font-size: 1.1rem; padding: 0 15px; }
+    .texto { 
+        font-size: 1.1rem; 
+        padding: 0 15px; 
+        color: #e0e0e0; /* Garante texto claro no parágrafo */
+    }
 
     .image {
         height: 22rem;
@@ -277,64 +349,8 @@ hr {
     }
 }
 
-/* Quando a tela for pequena */
-@media (max-width: 768px) {
-  .tabela-formas {
-    display: flex;
-    flex-direction: column;  /* um embaixo do outro */
-    justify-content: center; /* centraliza horizontalmente */
-    align-items: center;     /* centraliza horizontal */
-    width: 100%;
-    padding: 20px 0;         /* espaço acima e abaixo */
-    gap: 10px;               /* espaço entre os botões */
-  }
 
-  .tabela-formas tr,
-  .tabela-formas td {
-    display: block;
-    width: 100%;
-    text-align: center;
-    margin: 5px 0;
-  }
-
-  .tabela-formas a {
-    display: inline-block;
-    width: 80%;        /* largura dos botões */
-    max-width: 300px;
-    margin: 5px auto;  /* centralizado e espaçamento */
-  }
-
-  /* Ajuste da distância da imagem para os botões */
-  .image {
-    margin-bottom: 15px; /* aumenta o espaço entre imagem e botões */
-  }
-
-    /* ===== Menu horizontal em coluna ===== */
-    #menu-horizontal {
-        flex-direction: column; /* empilha itens */
-        align-items: center;
-    }
-
-    #menu-horizontal ul {
-        flex-direction: column; /* empilha links */
-        gap: 10px;
-        width: 100%;
-    }
-
-    #menu-horizontal li {
-        width: 100%;
-        text-align: center;
-    }
-
-    #menu-horizontal a {
-        display: block;
-        width: 90%;
-        margin: 0 auto;
-        font-size: 1rem;
-        padding: 10px;
-    }
-
-    /* ===== Modo escuro ===== */
+/* ===== Modo escuro (Preferências do Sistema) ===== */
 @media (prefers-color-scheme: dark) {
   body {
     background-color: #121212; /* fundo escuro */
@@ -371,6 +387,14 @@ hr {
     background: linear-gradient(90deg, #0097e3, #00e5ff);
   }
 
+  /* Botão ativo (mantém o novo estilo para o modo escuro) */
+  .tabela-formas a.active {
+    background: linear-gradient(135deg, #ff0054, #ff57a0);
+    color: #ffffff; 
+    box-shadow: 0 4px 15px rgba(255, 0, 84, 0.6);
+    border: 2px solid #ffffff; 
+  }
+
   #menu-horizontal {
     background: linear-gradient(90deg, #710505, #a20000);
   }
@@ -383,6 +407,4 @@ hr {
     background: linear-gradient(90deg, #555555, #333333);
     color: #f5f5f5;
   }
-}
-
 }
