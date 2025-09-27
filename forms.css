@@ -101,10 +101,25 @@ hr {
     transform: scale(1.05);
 }
 
-/* Ativo (quando clicado) */
+/* Ativo (quando clicado) - Novo estilo mais bonito */
 .tabela-formas a.active {
-    background: #fff;
-    color: #e52e71;
+    /* Gradiente vibrante e moderno */
+    background: linear-gradient(135deg, #ff0054, #ff57a0);
+    
+    /* Cor do texto para contraste */
+    color: #ffffff; 
+    
+    /* Sombra para dar profundidade (efeito "levantado") */
+    box-shadow: 0 4px 15px rgba(255, 0, 84, 0.6);
+    
+    /* Borda sólida para destaque (opcional, mas ajuda) */
+    border: 2px solid #ffffff; 
+    
+    /* Garante que o efeito de escala de hover não se aplique ao ativo */
+    transform: none;
+    
+    /* Transição suave para o novo estado */
+    transition: all 0.3s ease-in-out; 
 }
 
 
@@ -207,7 +222,6 @@ hr {
     font-size: 2rem;
     cursor: pointer;
 }
-
 
 /* ====== RESPONSIVIDADE ====== */
 @media (max-width: 768px) {
