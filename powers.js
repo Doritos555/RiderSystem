@@ -54,9 +54,9 @@ const riders = {
   },
   zeztz: {
     "Physicam Impact": "Imagens/Zeztz/Base.jpg",
-    "Technolom Machinery": "Imagens/Zeztz/Technolom Machinery.jpg",
-    "Esprim Barrier": "Imagens/Zeztz/Esprim Barrier.jpg",
-    "Paradigm Gravity": "Imagens/Zeztz/Paradigm Gravity.jpg"
+    "Inazuma Plasma": "Imagens/Zeztz/Inazuma Plasma.jpg",
+    "Inazuma Booster": "Imagens/Zeztz/Inazuma Booster.jpg",
+    "Catastorm": "Imagens/Zeztz/Catastorm.jpg"
   }
 };
 
@@ -110,13 +110,13 @@ const riderVideos = {
     Caking: "Imagens/Gavv/videos/Caking.mp4",
     "Blizzard Sorbet": "Imagens/Gavv/videos/Blizzard Sorbet.mp4",
     "Over Gavv": "Imagens/Gavv/videos/Over Gavv.mp4",
-    "Master Gavv": "Imagens/Gavv/videos/base.mp4"
+    "Master Gavv": "Imagens/Gavv/videos/Master Gavv.mp4"
   },
   zeztz: {
     "Physicam Impact": "Imagens/Zeztz/Videos/base.mp4", // Corrigido 'base' para 'Physicam Impact' para corresponder ao HTML/riderVideos
-    "Technolom Machinery": "Imagens/Zeztz/videos/Technolom Machinery.mp4",
-    "Esprim Barrier": "Imagens/Zeztz/videos/Esprim Barrier.mp4",
-    "Paradigm Gravity": "Imagens/Zeztz/videos/Paradigm Gravity.mp4"
+    "Inazuma Plasma": "Imagens/Zeztz/videos/Inazuma Plasma.mp4",
+    "Inazuma Booster": "Imagens/Zeztz/videos/Inazuma Booster.mp4",
+    "Catastorm": "Imagens/Zeztz/videos/Catastorm.mp4"
   }
 };
 
