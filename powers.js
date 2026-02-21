@@ -56,7 +56,7 @@ const riders = {
     "Physicam Impact": "Imagens/Zeztz/Base.jpg",
     "Inazuma Plasma": "Imagens/Zeztz/Inazuma Plasma.jpg",
     "Inazuma Booster": "Imagens/Zeztz/Inazuma Booster.jpg",
-    "Catastorm": "Imagens/Zeztz/Catastorm.jpg"
+    "Catastrom": "Imagens/Zeztz/Catastrom.jpg"
   }
 };
 
@@ -116,7 +116,7 @@ const riderVideos = {
     "Physicam Impact": "Imagens/Zeztz/Videos/base.mp4", // Corrigido 'base' para 'Physicam Impact' para corresponder ao HTML/riderVideos
     "Inazuma Plasma": "Imagens/Zeztz/videos/Inazuma Plasma.mp4",
     "Inazuma Booster": "Imagens/Zeztz/videos/Inazuma Booster.mp4",
-    "Catastorm": "Imagens/Zeztz/videos/Catastorm.mp4"
+    "Catastrom": "Imagens/Zeztz/videos/Catastrom.mp4"
   }
 };
 
