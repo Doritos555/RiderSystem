@@ -57,7 +57,8 @@ const riders = {
     "Inazuma Plasma": "Imagens/Zeztz/Inazuma Plasma.jpg",
     "Inazuma Booster": "Imagens/Zeztz/Inazuma Booster.jpg",
     "Catastrom": "Imagens/Zeztz/Catastrom.jpg",
-    "Orderm": "Imagens/Zeztz/Orderm.jpg"
+    "Orderm": "Imagens/Zeztz/Orderm.jpg",
+    "Exdream": "Imagens/Zeztz/videos/Exdream.jpeg"
   }
 };
 
@@ -118,7 +119,8 @@ const riderVideos = {
     "Inazuma Plasma": "Imagens/Zeztz/videos/Inazuma Plasma.mp4",
     "Inazuma Booster": "Imagens/Zeztz/videos/Inazuma Booster.mp4",
     "Catastrom": "Imagens/Zeztz/videos/Catastrom.mp4",
-    "Orderm": "Imagens/Zeztz/videos/Orderm.mp4"
+    "Orderm": "Imagens/Zeztz/videos/Orderm.mp4",
+    "Exdream": "Imagens/Zeztz/videos/Exdream.mp4"
   }
 };
 
