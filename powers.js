@@ -58,7 +58,7 @@ const riders = {
     "Inazuma Booster": "Imagens/Zeztz/Inazuma Booster.jpg",
     "Catastrom": "Imagens/Zeztz/Catastrom.jpg",
     "Orderm": "Imagens/Zeztz/Orderm.jpg",
-    "Exdream": "Imagens/Zeztz/videos/Exdream.jpg"
+    "Exdream": "Imagens/Zeztz/Exdream.jpg"
   }
 };
 
