@@ -11,7 +11,6 @@ const riders = {
   },
   saber: {
     "Brave Dragon": "imagens/Saber/Base.jpg",
-    "Crimson Dragon": "imagens/Saber/Crimson Dragon.jpg",
     "Dragonic Knight": "imagens/Saber/Dragonic Knight.jpg",
     "Primitive Dragon": "imagens/Saber/Primitive Dragon.jpg",
     "Elemental Primitive Dragon": "imagens/Saber/Elemental Primitive Dragon.jpg",
@@ -73,7 +72,6 @@ const riderVideos = {
   },
   saber: {
     "Brave Dragon": "Imagens/Saber/videos/base.mp4",
-    "Crimson Dragon": "Imagens/Saber/videos/Crimson Dragon.mp4",
     "Dragonic Knight": "Imagens/Saber/videos/Dragonic Knight.mp4",
     "Primitive Dragon": "Imagens/Saber/videos/Primitive Dragon.mp4",
     "Elemental Primitive Dragon": "Imagens/Saber/videos/Elemental Primitive Dragon.mp4",
