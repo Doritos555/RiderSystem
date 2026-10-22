@@ -121,7 +121,7 @@ const riderVideos = {
     "Inazuma Booster": "Imagens/Zeztz/videos/Inazuma Booster.mp4",
     "Catastrom": "Imagens/Zeztz/videos/Catastrom.mp4",
     "Orderm": "Imagens/Zeztz/videos/Orderm.mp4",
-    "Exdream": "Imagens/Zeztz/videos/Exdream.mp4"
+    "Exdream": "Imagens/Gavv/videos/Master Gavv.mp4"
   },
   myth: {
     "Mouse Frame": "Imagens/Geats/Base.jpg"
