@@ -173,7 +173,7 @@ function trocarForma(rider, forma, event) {
 function setInitialFormsActive() {
   // Mapeia os riders com base no HTML (s1 a s7)
   const riderSections = [
-    's1', 's2', 's3', 's4', 's5', 's6', 's7'
+    's1', 's2', 's3', 's4', 's5', 's6', 's7', 's8'
   ];
 
   riderSections.forEach(id => {
