@@ -122,6 +122,9 @@ const riderVideos = {
     "Catastrom": "Imagens/Zeztz/videos/Catastrom.mp4",
     "Orderm": "Imagens/Zeztz/videos/Orderm.mp4",
     "Exdream": "Imagens/Zeztz/videos/Exdream.mp4"
+  },
+  myth: {
+    "Mouse Frame": "Imagens/Geats/Base.jpg"
   }
 };
 
@@ -133,7 +136,8 @@ const formasSelecionadas = {
   geats: "MagnumBoost",
   gotchard: "Steamhopper",
   gavv: "Poppin Gummy",
-  zeztz: "Physicam Impact" // Corrigido para a forma base correta
+  zeztz: "Physicam Impact", // Corrigido para a forma base correta
+  myth: "Mouse Frame"
 };
 
 // ===== Troca de imagem e destaque do botão =====
