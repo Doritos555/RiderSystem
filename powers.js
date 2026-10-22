@@ -60,7 +60,7 @@ const riders = {
     "Exdream": "Imagens/Zeztz/Exdream.jpg"
   },
   myth: {
-    "Mouse Forms": "Imagens/Geats/Base.jpg"
+    "Mouse Frame": "Imagens/Geats/Base.jpg"
   }
 };
 
