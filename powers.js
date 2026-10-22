@@ -124,7 +124,7 @@ const riderVideos = {
     "Exdream": "Imagens/Zeztz/videos/Exdream.mp4",
   },
   myth: {
-    "Mouse Frame": "Imagens/Revice/videos/base.mp4",
+    "Mouse Frame": "Imagens/Revice/videos/base.mp4"
   }
 };
 
