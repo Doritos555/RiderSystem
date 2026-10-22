@@ -60,7 +60,7 @@ const riders = {
     "Exdream": "Imagens/Zeztz/Exdream.jpg"
   },
   myth: {
-    "Mouse Frame": "Imagens/Geats/Base.jpg"
+    "Mouse Frame": "Imagens/My-Th/Base.jpg"
   }
 };
 
@@ -124,7 +124,7 @@ const riderVideos = {
     "Exdream": "Imagens/Zeztz/videos/Exdream.mp4",
   },
   myth: {
-    "Mouse Frame": "Imagens/Revice/videos/base.mp4"
+    "Mouse Frame": "Imagens/My-Th/videos/base.mp4"
   }
 };
 
