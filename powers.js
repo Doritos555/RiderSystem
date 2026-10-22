@@ -58,6 +58,9 @@ const riders = {
     "Catastrom": "Imagens/Zeztz/Catastrom.jpg",
     "Orderm": "Imagens/Zeztz/Orderm.jpg",
     "Exdream": "Imagens/Zeztz/Exdream.jpg"
+  },
+  myth: {
+    "Mouse Forms": "Imagens/Geats/Base.jpg"
   }
 };
 
