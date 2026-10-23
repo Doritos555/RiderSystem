@@ -32,7 +32,6 @@ const riders = {
     "Command Form Jet Mode": "Imagens/Geats/Command Form Jet Mode.jpg",
     "Boost MarkII": "Imagens/Geats/Boost MarkII.jpg",
     "Laser Boost": "Imagens/Geats/laser boost.jpg",
-    "Boost MarkIII": "Imagens/Geats/Boost MarkIII.jpg",
     "Geats MarkIX": "Imagens/Geats/Geats MarkIX.jpg"
   },
   gotchard: {
@@ -96,7 +95,6 @@ const riderVideos = {
     "Command Form Jet Mode": "Imagens/Geats/videos/Command Form Jet Mode.mp4",
     "Boost MarkII": "Imagens/Geats/videos/Boost MarkII.mp4",
     "Laser Boost": "Imagens/Geats/videos/Laser Boost.mp4",
-    "Boost MarkIII": "Imagens/Geats/videos/Boost MarkIII.mp4",
     "Geats MarkIX": "Imagens/Geats/videos/Geats MarkIX.mp4"
   },
   gotchard: {
