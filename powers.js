@@ -59,7 +59,12 @@ const riders = {
     "Exdream": "Imagens/Zeztz/Exdream.jpg"
   },
   myth: {
-    "Mouse Frame": "Imagens/My-Th/Base.jpg"
+    "Mouse Frame": "Imagens/My-Th/Base.jpg",
+    "Dragon Rising": "Imagens/My-Th/Dragon Rising.jpg",
+    "Rabbit Rising": "Imagens/My-Th/Rabbit Rising.jpg",
+    "Prominence Frame": "Imagens/My-Th/Prominence Frame.jpg",
+    "Galactica Frame": "Imagens/My-Th/Galactica Frame.jpg",
+    "Final form": "Imagens/My-Th/Base.jpg",
   }
 };
 
