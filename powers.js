@@ -115,8 +115,8 @@ const riderVideos = {
     "Poppin Gummy": "Imagens/Gavv/videos/base.mp4",
     Caking: "Imagens/Gavv/videos/Caking.mp4",
     "Blizzard Sorbet": "Imagens/Gavv/videos/Blizzard Sorbet.mp4",
-    "Over Gavv": "Imagens/Gavv/videos/Over Gavv.mp4",
-    "Master Gavv": "Imagens/Gavv/videos/Master Gavv.mp4"
+    "Over Gavv": "Imagens/Gavv/videos/Over.mp4",
+    "Master Gavv": "Imagens/Gavv/videos/Master.mp4"
   },
   zeztz: {
     "Physicam Impact": "Imagens/Zeztz/Videos/base.mp4", // Corrigido 'base' para 'Physicam Impact' para corresponder ao HTML/riderVideos
